@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 function Cards({ item }) {
   console.log(item);
@@ -27,5 +28,8 @@ function Cards({ item }) {
     </>
   );
 }
+Cards.propTypes = {
+  item: PropTypes.any.isRequired,
+};
 
 export default Cards;
